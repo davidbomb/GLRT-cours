@@ -18,7 +18,7 @@ class LinkedList {
     addElement(elt, index){
         var node = new Element(elt)
         var currentNode = this.list.firstElement
-        for(let i = 0; i < index; i++){
+        for(let i = 0; i < index-1; i++){
             currentNode = currentNode.next
             secondNode = currentNode.next
         }
@@ -85,3 +85,11 @@ class LinkedList {
     
         
   }
+
+
+//   var node = new Element(5)
+//   var linkedlist = new LinkedList(node)
+//   linkedlist.addElement(node, 1)
+
+
+  module.exports = LinkedList;
